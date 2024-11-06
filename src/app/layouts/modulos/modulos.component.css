@@ -1,0 +1,58 @@
+header{
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.fondo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main{
+  position: absolute;
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: auto;
+}
+.logo{
+  width: 15vw;
+}
+.modulos {
+  display: grid;
+  font-size: 1.5vw;
+  grid-template-columns: 10vw 10vw 10vw; 
+  grid-template-rows: 6vw 6vw 6vw;
+  gap: 3vw;
+}
+.modulos button{
+  background: #fff;
+  border-radius: 5vw;
+  color: gray;
+  cursor: pointer;
+  border: 0.1vw solid gray;
+}
+
+@media (width < 1100px) {
+  main{
+    width: 100%;
+    align-items: center;
+  }
+  .logo{
+    width: 50vw;
+  }
+  .modulos {
+    grid-template-columns: 20vw 20vw 20vw; 
+    grid-template-rows: 10vw 10vw;
+    gap: 5vw;
+    font-size: 3vw;
+  }
+
+}

@@ -1,0 +1,42 @@
+header{
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.fondo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main{
+  position: absolute;
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: auto;
+}
+.logo{
+  width: 15vw;
+}
+.video{
+  width: 80%;
+  height: 30vw;
+  background-color: gray;
+}
+@media (width < 1100px) {
+  main{
+    width: 100%;
+    align-items: center;
+  }
+  .logo{
+    width: 50vw;
+  }
+
+}

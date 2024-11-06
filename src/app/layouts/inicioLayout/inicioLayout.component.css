@@ -1,0 +1,89 @@
+header{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fondo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+main{
+  position: absolute;
+  width: 98%;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+
+.logo{
+  display: flex;
+  width: 30vw;
+
+}
+main p {
+  color: gray;
+  font-size: 1.8vw;
+  margin: 0;
+}
+main input{
+  width: 40vw;
+  height: 3vw;
+  border-radius:5vw;
+  font-size: 0.8vw;
+  box-sizing: border-box;
+  padding-left: 2vw;
+  border: 0.1vw solid gray;
+}
+.add-buttons{
+  display: flex;
+  gap: 5vw;
+}
+main button{
+  width: 10vw;
+  color: gray;
+  background-color: #fff;
+  font-size: 0.8vw;
+  height: 3vw;
+  border-radius:5vw;
+  border: 0.1vw solid gray;
+  cursor: pointer;
+}
+
+.add-buttons button{
+  background-color: transparent;
+}
+
+@media (width < 800px){
+  main{
+    width: 100%;
+  }
+  .logo{
+    width: 75vw;
+  }
+  main p {
+    font-size: 3.5vw;
+  }
+  main input{
+    width: 85%;
+    height: 8vw;
+    font-size: 2vw;
+  }
+  main button{
+    width: 25vw;
+    font-size: 2vw;
+    height: 8vw;
+  }
+  .add-buttons{
+    gap: 10vw;
+  }
+}
